@@ -43,13 +43,16 @@
     <title>Horstmann Engineering</title>
     <style>
       .bg-blue{	
-       background: linear-gradient(140deg, #f5f7f9 0%, #586bf4 100%);
+         background: linear-gradient(140deg, #f5f7f9 0%, #586bf4 100%);
+        }
+    
+      .white-bottom-border {
+        border-bottom: 2px solid white; /* Change the thickness or style as needed */
       }
     </style>
   </head>
   <body>
     <div id="google_translate_element"></div>
-
     <div class="site-mobile-menu site-navbar-target">
       <div class="site-mobile-menu-header">
         <div class="site-mobile-menu-close">
@@ -60,41 +63,59 @@
     </div>
 
     <nav class="site-nav navbar navbar-expand-lg navbar-dark bg-blue position-absolute px-0 py-2 top-0 position-fixed start-0">
-      <div class="container p-0 ">
-        <div class="d-flex  ">
-        <a class="navbar-brand " href="index.html"><img src="images/logo.jpg" class="img-fluid" style="width: 35%; min-width:5rem;" alt="Duxes"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-        <li class="nav-item">
-        <a class="nav-link " href="index.html">Startseite</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="about.html">Über</a>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="career.html">Karriere</a>
-        </li>
-        <li class="nav-item dropdown">
-        <a class="nav-link dropdown-toggle border-bottom" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dienstleistungen</a>
-        <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-          <li><a class="dropdown-item" href="contract.html">Verträge</a></li>
-          <li><a class="dropdown-item" href="competencies.html">Kompetenzen</a></li>
-          <li><a class="dropdown-item" href="architectural.html">Architektonische Rollen</a></li>
-          <li><a class="dropdown-item" href="simulationandtesting.html">Simulation und Testen</a></li>
-          <li><a class="dropdown-item" href="engineeringspecili.html">Technische Spezialisierungen</a></li>
-        </ul>
-        </li>
-        <li class="nav-item">
-        <a class="nav-link" href="contact.html">Kontaktieren Sie uns</a>
-        </li>
-        </ul>
-        </div>
-      </div>
-      </nav>
+			<div class="container">
+				<div class="d-flex">
+					<a class="navbar-brand d-inline" href="index.html"
+				><img
+				src="images/logo.jpg"
+				class="img-fluid"
+				style="width: 35%; min-width: 5rem"
+				alt="Duxes"
+			/></a>
+			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+			  <span class="navbar-toggler-icon"></span>
+			</button>
+				</div>
+			  <div class="collapse navbar-collapse" id="navbarSupportedContent">
+				<ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+				  <li class="nav-item">
+					<a class="nav-link " href="index.html">Heim</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link " href="about.html">über.</a>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="career.html">Karriere</a>
+				  </li>
+				  <li class="nav-item dropdown">
+					<a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+					  Dropdown
+					</a>
+					<ul class="dropdown-menu">
+					  <li><a class="dropdown-item" href="contract.html">Verträge</a></li>
+					  <li><a class="dropdown-item" href="competencies.html"
+						>Kompetenzen</a
+					  ></li>
+					  <li>  <a class="dropdown-item" href="architectural.html"
+						>Architektonische Rollen</a
+					  ></li>
+					  <li>  <a class="dropdown-item" href="simulationandtesting.html"
+						>Simulation und Testen</a
+					  ></li>
+					  <li>
+						<a class="dropdown-item" href="engineeringspecili.html"
+						  >Technische Spezialisierungen</a
+						>
+					  </li>
+					</ul>
+				  </li>
+				  <li class="nav-item">
+					<a class="nav-link" href="contact.html">Kontakt</a>
+				  </li>
+				</ul>
+			  </div>
+			</div>
+		  </nav>
 
     <div class="hero overlay inner-page">
       <img src="images/blob.svg" alt="" class="img-fluid blob" />
@@ -267,7 +288,7 @@
     </div>
 
 
-    <footer class="site-footer">
+    <div class="site-footer">
       <div class="container">
         <div class="row">
           <div class="col-lg-6">
@@ -316,7 +337,7 @@
           </div> <!-- /.col-lg-4 -->
         </div> <!-- /.row -->
     
-        <div class="row mt-5">
+        <div class="row mt-5 gap-2">
           <div class="col-9">
             <!-- 
           **==========
@@ -325,10 +346,10 @@
           **==========
         -->
     
-        <p> © Copyright Horstmann Engineering; <script>document.write(new Date().getFullYear());</script>2024. All Rights Reserved. <!-- License information: https://untree.co/license/ -->
+        <p> &copy Copyright Horstmann Engineering; <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. <!-- License information: https://untree.co/license/ -->
         </p>
         </div>
-        <div class="col-3">
+        <div class="col-lg-3 col-10 ">
         <!-- <h3>Social</h3> -->
               <ul class="list-unstyled social">
                 <li><a href="#"><span class="icon-instagram"></span></a></li>
@@ -341,7 +362,7 @@
         </div>
       </div>
       </div> <!-- /.container -->
-    </footer>
+    </div> 
     
   
     <!-- /.site-footer -->
