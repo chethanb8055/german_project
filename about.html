@@ -40,11 +40,6 @@
     <link rel="stylesheet" href="css/flatpickr.min.css" />
 
     <title>Horstmann Engineering</title>
-    <style>
-      .bg-blue{
-        background: linear-gradient(140deg, #306ee8 0%, #3038e8 100%);
-      }
-    </style>
   </head>
   <body>
     <div class="site-mobile-menu site-navbar-target">
@@ -55,43 +50,55 @@
       </div>
       <div class="site-mobile-menu-body"></div>
     </div>
+    
+    <nav class="site-nav">
+			<div class="container">
+			  <div class="menu-bg-wrap">
+				<div class="site-navigation">
+				  <div class="row g-0 align-items-center">
+					<div class="col-2">
+					  <a href="index.html" class="logo m-0 float-start"> <img src="./images/logo (2).png" width="200rem" alt="Logoo"> <span class="text-primary"></span></a>
+					</div>
+					<div class="col-lg-10 col-8 text-center ">
+					  <ul class="js-clone-nav d-none d-lg-inline-block text-start site-menu mx-auto">
+						<li><a class="nav-link " href="index.html">Heim</a></li>
+						<li><a class="nav-link active" href="about.html">über.</a>
+						<li><a class="nav-link" href="career.html">Karriere</a>
+						<li class="has-children">
+						  <a>Dropdown</a>
+						  <ul class="dropdown">
+							<li><a class="dropdown-item" href="contract.html">Verträge</a></li>
+							<li>
+							<li><a class="dropdown-item" href="competencies.html"
+								>Kompetenzen</a
+							  ></li>
+							<li><a class="dropdown-item" href="architectural.html"
+								>Architektonische Rollen</a
+							  ></li>
+							<li><a class="dropdown-item" href="simulationandtesting.html"
+								>Simulation und Testen</a
+							  ></li>
+							<li><a class="dropdown-item" href="engineeringspecili.html"
+								>Technische Spezialisierungen</a
+							  ></li>
+						  </ul>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link active" href="contact.html">Kontakt</a>
+						  </li>
+					  </ul>
+					</div>
+					<div class="col-2 text-end">
+					  <a href="#" class="burger ms-auto float-end site-menu-toggle js-menu-toggle d-inline-block d-lg-none light">
+						<span></span>
+					  </a>
+					</div>
+				  </div>
+				</div>
+			  </div>
+			</div>
+		  </nav>
 
-    <nav class="site-nav navbar navbar-expand-lg navbar-dark bg-blue position-absolute top-0 start-0">
-      <div class="container">
-        <div class="d-flex">
-        <a class="navbar-brand ms-auto" href="index.html"><img src="images/logo.jpg" class="img-fluid" style="width: 40%; min-width:5rem;" alt="Duxes"></a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        </div>
-        <div class="collapse navbar-collapse" id="navbarNav">
-        <ul class="navbar-nav ms-auto">
-          <li class="nav-item">
-          <a class="nav-link" href="index.html">Startseite</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="about.html">Über</a>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="career.html">Karriere</a>
-          </li>
-          <li class="nav-item dropdown">
-          <a class="nav-link dropdown-toggle" href="#" id="servicesDropdown" role="button" data-bs-toggle="dropdown" aria-expanded="false">Dienstleistungen</a>
-          <ul class="dropdown-menu" aria-labelledby="servicesDropdown">
-            <li><a class="dropdown-item" href="contract .html">Verträge</a></li>
-            <li><a class="dropdown-item" href="competencies.html">Kompetenzen</a></li>
-            <li><a class="dropdown-item" href="architectural.html">Architektonische Rollen</a></li>
-            <li><a class="dropdown-item" href="simulationandtesting.html">Simulation und Testen</a></li>
-            <li><a class="dropdown-item" href="engineeringspecili.html">Technische Spezialisierungen</a></li>
-          </ul>
-          </li>
-          <li class="nav-item">
-          <a class="nav-link" href="contact.html">Kontaktieren Sie uns</a>
-          </li>
-        </ul>
-        </div>
-      </div>
-      </nav>
     <div class="hero overlay inner-page">
       <img src="images/blob.svg" alt="" class="img-fluid blob" />
       <div class="container">
@@ -195,7 +202,7 @@
 
     <!-- Feature Section -->
     <div class="section sec-features py-5">
-      <div class="container ">
+      <div class="container">
         <div class="row g-5 d-flex justify-content-center m-2">
           <div
             class="col-12 col-sm-6 col-md-6 col-lg-4 align-items-center mt-0"
@@ -310,81 +317,78 @@
     <div class="site-footer">
       <div class="container">
         <div class="row">
-          <div class="col-lg-9">
-            <div class="widget">
-              <p>Horstmann Engineering</p>
-              <address>
-                #43 *******, <br />
-                **** -**3910
-              </address>
-              <ul class="list-unstyled links">
-                <li><a href="tel://11234567890">+91-**********</a></li>
-                <li><a href="mailto:info@mydomain.com">info@**.com</a></li>
-              </ul>
-            </div>
-            <!-- /.widget -->
-          </div>
-          <!-- /.col-lg-4 -->
-
+          <div class="col-lg-6">
+            
+            <!-- <div class="col-md-3"> -->
+              <div class="widget">
+                <h4 class="widget-title">Horstmann Elektrik GmbH</h4>
+                <address>Vespucciweg 5
+                  70771 Leinfelden-Echterdingen
+                  DEUTSCHLAND
+                  </address>
+                <ul class="list-unstyled links">
+                  <li><a href="mailto:info@horstmann-engineering.com">info@horstmann-engineering.com</a></li>
+                  <li><a href="http://www.horstmann-engineering.com">Website</a></li>
+                </ul>
+              </div>  <!-- /.widget -->
+          </div> <!-- /.col-lg-4 -->
+          
           <div class="col-lg-3">
             <div class="widget">
-              <h3>Navigationsmenü</h3>
+              <h3>Navigation</h3>
               <ul class="list-unstyled links mb-4">
-                <li><a href="#">Unsere Vision</a></li>
-                <li><a href="#">Über uns</a></li>
-                <li><a href="#">Kontaktieren Sie uns</a></li>
+                <li><a href="#">Startseite</a></li>
+                <li><a href="about.html">Über</a></li>
+                <li><a href="career.html">Karriere</a></li>
+                <li><a href="contact.html">Kontakt</a></li>
               </ul>
-            </div>
-            <!-- /.widget -->
+              
+              
+            </div> <!-- /.widget -->
           </div>
-          <!-- /.col-lg-4 -->
-        </div>
-        <!-- /.row -->
-
-        <div class="row mt-5">
+  
+          <div class="col-lg-3">
+            <div class="widget">
+              <h3>DIENSTLEISTUNGEN</h3>
+              <ul class="list-unstyled links mb-4">
+                <li class=""><a href="contract.html">Verträge</a></li>
+                <li><a href="engineeringspecili.html">Technische Spezialisierungen</a></li>
+              </ul>
+              <ul class="list-unstyled links mb-4 ">
+                <li><a href="imprint.html">Impressum</a></li>
+                <li><a href="privacy_policy.html">Datenschutzerklärung</a></li>
+              </ul>
+              
+            </div> <!-- /.widget -->
+          </div> <!-- /.col-lg-4 -->
+        </div> <!-- /.row -->
+    
+        <div class="row mt-5 gap-2">
           <div class="col-9">
             <!-- 
-                **==========
-                HINWEIS: 
-                Bitte entfernen Sie diesen Urheberrechtslink nicht, es sei denn, Sie kaufen die Lizenz hier: https://untree.co/license/
-                **==========
-              -->
-
-            <p>
-              &copy Urheberrecht Horstmann Engineering;
-              <script>
-                document.write(new Date().getFullYear());
-              </script>
-              . Alle Rechte vorbehalten.
-              <!-- Lizenzinformationen: https://untree.co/license/ -->
-            </p>
-          </div>
-          <div class="col-3">
-            <ul class="list-unstyled social">
-              <li>
-                <a href="#"><span class="icon-instagram"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-twitter"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-facebook"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-linkedin"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-pinterest"></span></a>
-              </li>
-              <li>
-                <a href="#"><span class="icon-dribbble"></span></a>
-              </li>
-            </ul>
-          </div>
+          **==========
+          NOTE: 
+          Please don't remove this copyright link unless you buy the license here https://untree.co/license/  
+          **==========
+        -->
+    
+        <p>  Copyright &copy <script>document.write(new Date().getFullYear());</script>. All Rights Reserved. <!-- License information: https://untree.co/license/ -->
+        </p>
+        </div>
+        <div class="col-lg-3 col-10 ">
+        <!-- <h3>Social</h3> -->
+              <ul class="list-unstyled social">
+                <li><a href="#"><span class="icon-instagram"></span></a></li>
+                <li><a href="#"><span class="icon-twitter"></span></a></li>
+                <li><a href="#"><span class="icon-facebook"></span></a></li>
+                <li><a href="#"><span class="icon-linkedin"></span></a></li>
+                <li><a href="#"><span class="icon-pinterest"></span></a></li>
+                <li><a href="#"><span class="icon-dribbble"></span></a></li>
+              </ul>
         </div>
       </div>
-      <!-- /.container -->
-    </div>
+      </div> <!-- /.container -->
+    </div>  <!-- /.site-footer -->
 
     <!-- /.site-footer -->
 
